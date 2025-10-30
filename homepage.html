@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Deal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bogo-container">
+        <div class="header">
+            <h1>YAY! It's BOGO</h1>
+        </div>
+        
+        <div class="pricing-options">
+            <!-- 1 Unit Option -->
+            <div class="option">
+                <div class="option-header">
+                    <span class="units">1 Unit</span>
+                </div>
+                <div class="price-section">
+                    <div class="standard-price">
+                        <span class="price-label">Standard Price</span>
+                        <span class="price">$24.00 USD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 Unit Option (Most Popular) -->
+            <div class="option popular">
+                <div class="popular-badge">MOST POPULAR</div>
+                <div class="option-header">
+                    <span class="units">2 Unit</span>
+                    <span class="discount">20% off</span>
+                </div>
+                
+                <div class="customization">
+                    <div class="size-option">
+                        <label>Size</label>
+                        <div class="size-buttons">
+                            <button class="size-btn active">#1</button>
+                            <button class="size-btn">#2</button>
+                        </div>
+                    </div>
+                    
+                    <div class="color-option">
+                        <label>Colour</label>
+                        <div class="color-selection">
+                            <div class="color-choice">
+                                <span class="color-label">Black</span>
+                                <div class="color-preview" style="background-color: #000;"></div>
+                            </div>
+                            <div class="color-choice">
+                                <span class="color-label">Colour</span>
+                                <div class="color-preview" style="background-color: #FF6B6B;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-section">
+                    <div class="discount-price">
+                        <span class="price">$18.00 USD</span>
+                        <span class="original-price">$24.00 USD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Unit Option -->
+            <div class="option">
+                <div class="option-header">
+                    <span class="units">3 Unit</span>
+                    <span class="discount">80% off</span>
+                </div>
+                <div class="price-section">
+                    <div class="discount-price">
+                        <span class="price">$24.00 USD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery-info">
+            <span class="delivery-text">Free Delivery</span>
+        </div>
+
+        <div class="total-section">
+            <span class="total-label">Total :</span>
+            <span class="total-price">$18.00 USD</span>
+        </div>
+
+        <button class="add-to-cart-btn">
+            Add to Cart
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

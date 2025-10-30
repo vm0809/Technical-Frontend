@@ -1,0 +1,343 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bogo-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.option {
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.option:hover {
+    border-color: #4ECDC4;
+    transform: translateY(-2px);
+}
+
+.option.popular {
+    border-color: #4ECDC4;
+    background: linear-gradient(135deg, #f8ffff, #f0fdfa);
+    transform: scale(1.02);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.units {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.discount {
+    background: #FF6B6B;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.customization {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.size-option, .color-option {
+    margin-bottom: 15px;
+}
+
+.size-option:last-child, .color-option:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.size-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.size-btn {
+    padding: 8px 16px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.size-btn:hover {
+    border-color: #4ECDC4;
+    color: #4ECDC4;
+}
+
+.size-btn.active {
+    background: #4ECDC4;
+    border-color: #4ECDC4;
+    color: white;
+}
+
+.color-selection {
+    display: flex;
+    gap: 15px;
+}
+
+.color-choice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.color-choice:hover {
+    border-color: #4ECDC4;
+}
+
+.color-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.color-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+}
+
+.price-section {
+    margin-top: 10px;
+}
+
+.standard-price, .discount-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.original-price {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.delivery-info {
+    text-align: center;
+    margin: 25px 0;
+    padding: 15px;
+    background: #f0fdfa;
+    border-radius: 10px;
+    border: 1px solid #4ECDC4;
+}
+
+.delivery-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4ECDC4;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 2px solid #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.total-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.total-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4ECDC4;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.add-to-cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .bogo-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .option {
+        padding: 15px;
+    }
+    
+    .customization {
+        padding: 12px;
+    }
+    
+    .color-selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.color-choice {
+    position: relative;
+}
+
+.color-choice::after {
+    content: '●';
+    position: absolute;
+    right: 12px;
+    color: #4ECDC4;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.color-choice.selected::after {
+    opacity: 1;
+}
+
+.color-choice.selected {
+    border-color: #4ECDC4;
+    background-color: #f0fdfa;
+}
+
+.size-btn.active {
+    background: #4ECDC4;
+    border-color: #4ECDC4;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Enhanced hover states */
+.size-btn:hover:not(.active) {
+    border-color: #4ECDC4;
+    color: #4ECDC4;
+    transform: translateY(-1px);
+}
+
+.color-choice:hover:not(.selected) {
+    border-color: #4ECDC4;
+    transform: translateY(-1px);
+}
